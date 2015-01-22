@@ -58,12 +58,32 @@
 
 
 .caption {
-  bottom: 0;
-  min-height: 80px;
+  bottom: 180px;
+  min-height: 40px;
   left: 0;
   position: absolute;
   width: 100%;
   z-index: 2;
   font-size:2em;
   /*text-transform: uppercase;*/
+}
+
+.description {
+  bottom: 100px;
+  min-height: 80px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  font-size:1em;
+  /*text-transform: uppercase;*/
+}
+
+.slider-button {
+  bottom: 80px;
+  min-height: 30px;
+  left: 0;
+  position: relative;
+  z-index:2;
+
 }
