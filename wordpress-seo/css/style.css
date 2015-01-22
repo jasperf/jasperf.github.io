@@ -1441,3 +1441,14 @@
 				height: 100%;
 			}
 		}
+		
+		.slick-list {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		margin: 0;
+		padding: 0;
+		}
+		
+		
+		
