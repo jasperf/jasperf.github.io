@@ -55,3 +55,15 @@
 .slick-dots li.slick-active button:before { color: black; opacity: 0.75; }
 
 /*# sourceMappingURL=slick.css.map */
+
+
+.caption {
+  bottom: 0;
+  min-height: 80px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  font-size:2em;
+  /*text-transform: uppercase;*/
+}
