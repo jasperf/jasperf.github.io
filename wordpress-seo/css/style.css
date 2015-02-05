@@ -1448,3 +1448,9 @@
 		margin: 0;
 		padding: 0;
 		}
+		
+		.slick-slide ul.actions {
+		  position: absolute;
+		  top: 45%;
+		  left: 11.8%;
+		}
