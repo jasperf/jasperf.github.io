@@ -206,7 +206,9 @@
 							<!-- <span class="image featured"><img src="images/pic02.jpg" alt="" /></span> -->
 							<h3>Server Response Time</h3>
 							<span class="icon major fa-spinner accent5"></span>
-							<p>The quicker your server responds or loads the site the better. So a low TTFB is essential. Quick check from the command line </p><pre>curl -o /dev/null -w "Connect: %{time_connect} TTFB: %{time_starttransfer} Total time: %{time_total} \n" http://site.com</pre> <p>Google would like it to be less than 200 ms.</p>
+							<p>The quicker your server responds or loads the site the better. So a low TTFB is essential. Quick check from the command line </p><pre>curl -o /dev/null -w "Connect: %{time_connect} TTFB: %{time_starttransfer} Total time: %{time_total} \n" http://site.com</pre>
+							<p>This can also be done using browser inspectors such as the Chrome DevTools.</p>
+							<p>Google would like it to be <em>less than 200 ms</em>!</p>
 							<ul class="actions">
 								<li><a href="https://developers.google.com/speed/docs/insights/Server" class="button alt">Learn More</a></li>
 							</ul>
