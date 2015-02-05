@@ -20,10 +20,12 @@
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
 		<script src="js/smooth-scrolling.js"></script>
+		<script src="js/jquery.avgrund.min.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
 			<link rel="stylesheet" href="css/style-wide.css" />
+			<link rel="stylesheet" href="css/avgrund.css">
 		</noscript>
 		<link rel="stylesheet" href="slick/slick.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
@@ -173,7 +175,8 @@
 							<p>To load your site as quickly as possible all images should be compressed well and the site content should be gzipped by the server. Many of the techniques here are tips for the browser how to deal with loading of your site data.
  The "FarFutureExpiry" Plugin can help with Expires Header tweaks</p>
 							<ul class="actions">
-								<li><a href="https://imagewize.com/seo/quick-htaccess-performance-tweak-boost-seo/" class="button alt">Code snippets</a></li>
+								<li><a href="#" class="button alt" id="show">Code snippets</a></li>
+								<!-- https://imagewize.com/seo/quick-htaccess-performance-tweak-boost-seo/ -->
 							</ul>
 						</section>
 						
@@ -229,7 +232,7 @@
         							<!-- <span class="image featured"><img src="images/pic02.jpg" alt="" /></span> -->
         							<h3>Image Compression | Size</h3>
         							<span class="icon major fa-file-image-o accent5"></span>
-                      <p>Another issue a lot of sites have is that they either resize images in the browser or use images that are rather larger. There are command line and online tools you can install with <a href="http://brew.sh">Homebrew</a> or any other package manager. Commands with jpegoptim or optipng such as:<pre>jpegoptim --max=90 --strip-all --preserve --total image.jpg</pre> or <pre>optipng -o7 long-logo.png</pre>  to deal with this as well as plugins such as <a href="https://wordpress.org/plugins/ewww-image-optimizer/">EWWW optimizer</a>.</p><h3>Responsive and Adaptive Images</h3> <p> And then there is the issue of serving the right image for the right device. Imagewize is looking into bringing the future here with PictureFill or HISRC as solutions to the multi device and bandwidth environments. This besides the standard tricks to make images resize and stay of a certain max size.Read a great Smashing Magazine Article <a href="http://www.smashingmagazine.com/2013/07/08/choosing-a-responsive-image-solution/">here</a></p>
+                      <p>Another issue a lot of sites have is that they either resize images in the browser or use images that are rather larger. There are command line and online tools you can install with <a href="http://brew.sh">Homebrew</a> or any other package manager. Commands with jpegoptim or optipng such as:</p><pre>jpegoptim --max=90 --strip-all --preserve --total image.jpg</pre><p> or </p><pre>optipng -o7 long-logo.png</pre><p>to deal with this as well as plugins such as <a href="https://wordpress.org/plugins/ewww-image-optimizer/">EWWW optimizer</a>.</p><h3>Responsive and Adaptive Images</h3> <p> And then there is the issue of serving the right image for the right device. Imagewize is looking into bringing the future here with PictureFill or HISRC as solutions to the multi device and bandwidth environments. This besides the standard tricks to make images resize and stay of a certain max size.Read a great Smashing Magazine Article <a href="http://www.smashingmagazine.com/2013/07/08/choosing-a-responsive-image-solution/">here</a></p>
         							
         						</section>
 						
@@ -348,7 +351,6 @@
 										<div class="slick">
                           <div><span class="image fit">
                            <img src="images/google-webmaster-tools.png" alt="Google Webmaster Tools" />
-                            <div class="caption"></div>
               							<ul class="actions">
               								<li><a href="https://www.google.com/webmasters/tools/home?hl=en" class="button slider-button alt" style="
     border: solid;">Learn More</a></li>
@@ -358,9 +360,7 @@
     											<div>
                             <span class="image fit">
                               <img src="images/yoast-seo.png" alt="Yoast SEO" />
-                              <div class="caption"></div>
-                              <div class="description"></div>
-                							<ul class="actions">
+                              <ul class="actions">
                 								<li><a href="https://yoast.com" class="button slider-button alt" style="
     border: solid;">Learn More</a></li>
                               </ul>
@@ -369,7 +369,6 @@
 										    <div>
                           <span class="image fit">
                             <img src="images/google-pagespeed.png" alt="Google PageSpeed" />
-                            <div class="caption"></div>
               							<ul class="actions">
               								<li><a href="https://developers.google.com/speed/pagespeed" class="button slider-button alt" style="
     border: solid;">Learn More</a></li>
@@ -379,7 +378,6 @@
 										    <div>
                           <span class="image fit">
                             <img src="images/yslow.png" alt="YSlow" />
-                            <div class="caption"></div>
               							<ul class="actions">
               								<li><a href="http://yslow.org" class="button slider-button alt" style="
     border: solid;">Learn More</a></li>
@@ -389,7 +387,6 @@
 										    <div>
                           <span class="image fit">
                             <img src="images/adwords-keyplanner.png" alt="adwords keyplanner" />
-                            <div class="caption"></div>
               							<ul class="actions">
               								<li><a href="https://adwords.google.com/KeywordPlanner" class="button slider-button alt">Learn More</a></li>
                             </ul>
@@ -398,7 +395,6 @@
 										    <div>
                           <span class="image fit">
                             <img src="images/grunt-package-manager.png" alt="Grunt Package Manager" />
-                            <div class="caption"></div>
               							<ul class="actions">
               								<li><a href="http://gruntjs.com/" class="button slider-button alt">Learn More</a></li>
                             </ul>
@@ -407,7 +403,6 @@
 										    <div>
                           <span class="image fit">
                             <img src="images/maxcdn.png" alt="Max CDN" />
-                            <div class="caption"></div>
               							<ul class="actions">
               								<li><a href="http://tracking.maxcdn.com/c/95912/3968/378" class="button slider-button alt">Learn More</a></li>
                             </ul>
@@ -416,7 +411,6 @@
 										    <div>
                           <span class="image fit">
                             <img src="images/browser-inspector.png" alt="Max CDN" />
-                            <div class="caption"></div>
               							<ul class="actions">
               								<li><a href="https://developer.chrome.com/devtools" class="button slider-button alt" style="
     border: solid;">Learn More</a></li>
@@ -426,7 +420,6 @@
 									    <div>
                         <span class="image fit">
                           <img src="images/w3-total-cache.png" alt="W3 Total Cache" />
-                          <div class="caption"></div>
             							<ul class="actions">
             								<li><a href="https://wordpress.org/plugins/w3-total-cache/" class="button slider-button alt" style="
   border: solid;">Learn More</a></li>
@@ -436,7 +429,6 @@
 									    <div>
                         <span class="image fit">
                           <img src="images/google-analytics.png" alt="Google Analytics" />
-                          <div class="caption"></div>
             							<ul class="actions">
             								<li><a href="http://www.google.com/analytics/" class="button slider-button alt">Learn More</a></li>
                           </ul>
@@ -481,5 +473,24 @@
               });
           });
       </script>
+					
+					<script>
+						$(function() {
+							$('#show').avgrund({
+								height: 200,
+								holderClass: 'custom',
+								showClose: true,
+								showCloseText: 'Close',
+								enableStackAnimation: true,
+								onBlurContainer: '.container',
+								template: '<p>So implement your design and place content here! If you want to close modal, please hit "Esc", click somewhere on the screen or use special button.</p>' +
+								'<div>' +
+								'<a href="http://github.com/voronianski/jquery.avgrund.js" target="_blank" class="github">Avgrund on Github</a>' +
+								'<a href="http://twitter.com/voronianski" target="_blank" class="twitter">Twitter</a>' +
+								'<a href="http://dribbble.com/voronianski" target="_blank" class="dribble">Dribbble</a>' +
+								'</div>'
+							});
+						});
+	</script>
 	</body>
 </html>
