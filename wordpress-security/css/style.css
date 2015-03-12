@@ -1334,3 +1334,6 @@
 					margin-left: 0;
 					padding: 0;
 				}
+        .gist {
+          text-align: left;
+        }

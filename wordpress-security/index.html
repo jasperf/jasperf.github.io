@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>WordPress SEcurity by Imagewize.com</title>
+		<title>WordPress Security by Imagewize.com</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -107,7 +107,7 @@
 							<h3>Update and Backup</h3>
 							<p>Made a site change, added a blog post? Backup! Not just on the server, but add a third location if possible.</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#five" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="4u 12u$(medium)">
@@ -115,7 +115,7 @@
 							<h3>Secure Server Setup</h3>
 							<p>Moste Shared hosters do a decent job protecting your server, but things like file permissions, file maintenance, SFTP, password are up to you</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#six" class="button">More</a></li>
 							</ul>
 						</div>
 						<div class="4u$ 12u$(medium)">
@@ -123,28 +123,114 @@
 							<h3>Secure WordPress Setup</h3>
 							<p>There are several things you can do to make WordPress more secure. Remove, the readme, use a unique database prefix..</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="#seven" class="button">More</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 			</section>
-
-		<!-- Four -->
-			<section id="four" class="main style2 special">
+      
+  		<!-- Five -->
+  			<section id="five" class="main style2 special">
+  				<div class="container">
+  					<header class="major">
+  						<h2>Updates and Backups</h2>
+  					</header>
+  					<p>When you check out solutions on the web these are the three main ones that popup all the time</p>
+  					<div class="row 150%">
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/backup.png" alt="" /></span>
+  							<h3>Backup Database and Files</h3>
+  							<p>Made a site change, added a blog post? Backup! Not just on the server, but add a third location if possible.</p>
+  						</div>
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/dropbox.jpg" alt="" /></span>
+  							<h3>Backup on Server and Third Location</h3>
+  							<p>Make sure you backup on the server using a plugin or script that creates a unique folder and zipped package like BackupBuddy. BB also allows the automatic storing of packages on third locations like AMZ or DropBox.</p>
+  						</div>
+  						<div class="4u$ 12u$(medium)">
+  							<span class="image fit"><img src="images/localhost.jpg" alt="" /></span>
+  							<h3>Backup Locally</h3>
+  							<p>Always good to have a local storage of your precious site too of course.</p>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+        
+  		<!-- Six -->
+  			<section id="six" class="main style special">
+  				<div class="container">
+  					<header class="major">
+  						<h2>Server Tips</h2>
+  					</header>
+  					<p>Server Security needs depend on your setup. When you run a dedicated server you will take of all, when on a VPS you do quite a bit and on Shared almost zero. But there are still things that you can do</p>
+  					<div class="row 150%">
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/shell.png" alt="" /></span>
+  							<h3>Use SFTP, SSL and SSH when Possible</h3>
+  							<p>Do NOT use FTP as it is insecure. Use SFTP or Shell. Also do use SSL so connection to server is encrypted and identity site secured.</p>
+  						</div>
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/file-permissions.png" alt="" /></span>
+  							<h3>Check File and Directory Permissions</h3>
+  							<p>Make sure all files and folders have the correct permissions. Most of the time is should be<code>chmod 644</code> for files and <code>chmod 755</code> for folders</p>
+  						</div>
+  						<div class="4u$ 12u$(medium)">
+  							<span class="image fit"><img src="images/clean-up.png" alt="" /></span>
+  							<h3>Clean Up Outdated Apps</h3>
+  							<p>If you run staging areas on your server or test apps, or version controlled versions, make sure they also stay updated, or better yet remove them!</p>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+      
+  		<!-- Seven -->
+  			<section id="seven" class="main style2 special">
+  				<div class="container">
+  					<header class="major">
+  						<h2>Secure WordPress Setup</h2>
+  					</header>
+  					<p>When you check out solutions on the web these are the three main ones that popup all the time</p>
+  					<div class="row 150%">
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/backup.png" alt="" /></span>
+  							<h3>Database Prefix, No README, No Online Editing</h3>
+  							<p>Do not use <code>wp_</code> as a prefix. Use a unique prefix. Harder to hack using MySQL injections that way.</p>
+                <p>Remove the README and About files. Not needed and they give away info.</p>
+                <p>Turn of online editing. Slow, sloppy and dangerous: <script src="https://gist.github.com/jasperf/a702f71dc6c3e027fe90.js"></script></p>
+  						</div>
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/apache-logo.gif" alt="" /></span>
+  							<h3>.htaccess Login and PHP Blocks</h3>
+  							<p>Most sites using WordPress run on Apache. Using an .htaccess in wp-admin, wp-includes and uploads you can prevent brute force attacks and PHP code execution.
+                  <script src="https://gist.github.com/jasperf/59a54c84090a497f352d.js"></script>
+                    To generate the password for user login use:
+                    <script src="https://gist.github.com/jasperf/31b1d37f17a39514d7cd.js"></script>
+                    and to block php execution in a folder use: <script src="https://gist.github.com/jasperf/a785a46de79fc4a16e3e.js"></script>
+                </p>
+  						</div>
+  						<div class="4u$ 12u$(medium)">
+  							<span class="image fit"><img src="images/wordpress-security-keys.png" alt="" /></span>
+  							<h3>Security Keys</h3>
+  							<p>To make you cookie session more secure use WordPress Security Keys. They can be generated <a href="https://api.wordpress.org/secret-key/1.1/salt/">here</a>. Here and example: <script src="https://gist.github.com/jasperf/4a881037ff2236c5923c.js"></script></p>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+		<!-- Eight -->
+			<section id="eight" class="main style special">
 				<div class="container">
 					<header class="major">
 						<h2>Help needed?</h2>
 					</header>
-					<p>Contact me at Imagewize</p>
 					<ul class="actions uniform">
-						<li><a href="https://imagewize.com/contact/" class="button special">Contact</a></li>
+						<li><a href="https://imagewize.com/contact/" class="button special">Contact Me</a></li>
 					</ul>
 				</div>
 			</section>
 
-		<!-- Five -->
-			<section id="five" class="main style1">
+		<!-- Six -->
+		<!-- <section id="six" class="main style1">
 				<div class="container">
 					<header class="major special">
 						<h2>Elements</h2>
@@ -465,14 +551,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 		<!-- Footer -->
 			<section id="footer">
 				<ul class="icons">
-					<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
-					<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-					<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+					<li><a href="https://twitter.com/jasperfrumau" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/jasperf" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://imagewize.com/contact" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
 				</ul>
 				<ul class="copyright">
-					<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					<li>&copy; Imagewize</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 				</ul>
 			</section>
 
