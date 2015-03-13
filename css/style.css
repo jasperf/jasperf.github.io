@@ -9,3 +9,7 @@ li span {
     background: white;
     padding-right: 5px;
 }
+
+a {
+  text-decoration: none;
+}
