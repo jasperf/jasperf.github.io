@@ -629,7 +629,7 @@
 			text-align: center;
 		}
 	
-	#features-wrapper
+	#features-wrapper, .features-wrapper
 	{
 		position: relative;
 		overflow: hidden;
@@ -637,12 +637,12 @@
 		text-align: center;
 	}
 	
-		#features-wrapper p
+		#features-wrapper p, .features-wrapper p
 		{
 			text-align: center;
 		}
 	
-		#features-wrapper .actions
+		#features-wrapper .actions, .features-wrapper .actions
 		{
 			margin-top: 1.25em;
 		}
@@ -794,7 +794,7 @@
 /* Features                                                                      */
 /*********************************************************************************/
 	
-	#features
+	#features, .features
 	{
 	}
 	
@@ -871,3 +871,12 @@
 		border-top: solid 2px #e5e5e5;
 		text-align: center;
 	}
+  
+  /*********************************************************************************/
+  /* Wufoo Form                                                                     */
+  /*********************************************************************************/
+  
+  input#Field2 {
+      height: 25px !important;
+      border-radius: 5px !important;
+  }
