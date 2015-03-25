@@ -119,8 +119,8 @@ jQuery(document).ready(function($) {
    // main directions
    map = new GMaps({
       el: '#map', 
-      lat: 14.549072, 
-      lng: 121.046958, 
+      lat: 26.293383,
+      lng: 50.668337 , 
       zoom: 14, 
       zoomControl : true,
       zoomControlOpt: { style : 'SMALL', position: 'TOP_LEFT' }, 
