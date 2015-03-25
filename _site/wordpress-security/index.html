@@ -1,0 +1,578 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>WordPress Security by Imagewize.com</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon major fa-wordpress"></span>
+					<h1>Let's talk about <strong>WordPress Security</strong></h1>
+					<p>Presentation for Bahrain Web Meetup at Vortex by <a href="https://imagewize.com">Jasper Frumau</a></p>
+          <p>Common Attacks, Causes, Solutions, Backups+Updates, Secure Server Setup, Secure WordPress Setup in Detail, Final Notes</p>
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Let's Start</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<header class="major">
+								<h2>Common Attack Vectors<br />
+									on WordPress CMS</h2>
+							</header>
+							<p>WordPress is the most popular OS CMS worldwide and is under constant attack</p><p>Typical Hacks are:
+								</p><ul>
+									<li>Backdoors (shell scripts)</li>
+									<li>Drive-by downloads (often a payload on your user’s local machine)</li>
+									<li>Pharma hacks (meta spam, page spam links),</li>
+									<li>Malicious redirects.</li>
+								</ul>
+								<ul class="actions">
+									<li><a href="#two" class="button scrolly">Causes</a></li>
+								</ul>
+						</div>
+						<div class="6u$ 12u$(medium) important(medium)">
+							<span class="image fit"><img src="images/backdoor.png" alt="" /></span>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!-- Two -->
+			<section id="two" class="main style2">
+				<div class="container">
+					<div class="row 150%">
+						<div class="6u 12u$(medium)">
+							<ul class="major-icons">
+								<li><span class="icon style1 major fa-server"></span></li>
+								<li><span class="icon style2 major fa-file-text"></span></li>
+								<li><span class="icon style3 major fa-plug"></span></li>
+								<li><span class="icon style4 major fa-dashboard"></span></li>
+							</ul>
+						</div>
+						<div class="6u$ 12u$(medium)">
+							<header class="major">
+								<h2>Causes</h2>
+							</header>
+							<p>Even though some developers complain that WordPress is leaky and badly coded, almost all causes are related to other factors.</p>
+							<ol>
+									<li>Server setup and Security Issues</li>
+									<li>Vulnerable Themes</li>
+									<li>Plugins</li>
+									<li>Weak Passwords</li>
+								</ol>
+								<ul class="actions">
+									<li><a href="#three" class="button scrolly">Solutions</a></li>
+								</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Three -->
+			<section id="three" class="main style1 special">
+				<div class="container">
+					<header class="major">
+						<h2>Preventive Measures</h2>
+					</header>
+					<p>When you check out solutions on the web these are the three main ones that popup all the time</p>
+					<div class="row 150%">
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/backup.png" alt="" /></span>
+							<h3>Update and Backup</h3>
+							<p>Made a site change, added a blog post? Backup! Not just on the server, but add a third location if possible.</p>
+              <p>Great tool to backup is Backup Buddy.</p>
+							<ul class="actions">
+								<li><a href="#five" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u 12u$(medium)">
+							<span class="image fit"><img src="images/file-permissions.png" alt="" /></span>
+							<h3>Secure Server Setup</h3>
+							<p>Moste Shared hosters do a decent job protecting your server, but things like file permissions, file maintenance, SFTP, password are up to you</p>
+							<ul class="actions">
+								<li><a href="#six" class="button">More</a></li>
+							</ul>
+						</div>
+						<div class="4u$ 12u$(medium)">
+							<span class="image fit"><img src="images/wordpress-security-keys.png" alt="" /></span>
+							<h3>Secure WordPress Setup</h3>
+							<p>There are several things you can do to make WordPress more secure. Remove, the readme, use a unique database prefix..</p>
+							<ul class="actions">
+								<li><a href="#seven" class="button">More</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+      
+  		<!-- Five -->
+  			<section id="five" class="main style2 special">
+  				<div class="container">
+  					<header class="major">
+  						<h2>Updates and Backups</h2>
+  					</header>
+  					<p>So often clients neglec to update their site or forget to make backups</p>
+  					<div class="row 150%">
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/backup.png" alt="" /></span>
+  							<h3>Backup Database and Files</h3>
+  							<p>Made a site change, added a blog post? Backup! Not just on the server, but add a third location if possible.</p>
+								<p>And yes, do update and update often whethere it is themes, core or plugins.</p>
+  						</div>
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/dropbox.jpg" alt="" /></span>
+  							<h3>Backup on Server and Third Location</h3>
+  							<p>Make sure you backup on the server using a plugin or script that creates a unique folder and zipped package like BackupBuddy. BB also allows the automatic storing of packages on third locations like AMZ or DropBox.</p>
+  						</div>
+  						<div class="4u$ 12u$(medium)">
+  							<span class="image fit"><img src="images/localhost.jpg" alt="" /></span>
+  							<h3>Backup Locally</h3>
+  							<p>Always good to have a local storage of your precious site too of course.</p>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+        
+  		<!-- Six -->
+  			<section id="six" class="main style special">
+  				<div class="container">
+  					<header class="major">
+  						<h2>Server Tips</h2>
+  					</header>
+  					<p>Server Security needs depend on your setup. When you run a dedicated server you will take of all, when on a VPS you do quite a bit and on Shared almost zero. But there are still things that you can do</p>
+  					<div class="row 150%">
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/shell.png" alt="" /></span>
+  							<h3>Use SFTP, SSL and SSH when Possible</h3>
+  							<p>Do NOT use FTP as it is insecure. Use SFTP or Shell. Also do use SSL so connection to server is encrypted and identity site secured.</p>
+  						</div>
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/file-permissions.png" alt="" /></span>
+  							<h3>Check File and Directory Permissions</h3>
+  							<p>Make sure all files and folders have the correct permissions. Most of the time is should be<code>chmod 644</code> for files and <code>chmod 755</code> for folders</p>
+  						</div>
+  						<div class="4u$ 12u$(medium)">
+  							<span class="image fit"><img src="images/clean-up.png" alt="" /></span>
+  							<h3>Clean Up Outdated Apps</h3>
+  							<p>If you run staging areas on your server or test apps, or version controlled versions, make sure they also stay updated, or better yet remove them!</p>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+      
+  		<!-- Seven -->
+  			<section id="seven" class="main style2 special">
+  				<div class="container">
+  					<header class="major">
+  						<h2>Secure WordPress Setup</h2>
+  					</header>
+  					<p>When you check out solutions on the web these are the three main ones that popup all the time</p>
+  					<div class="row 150%">
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/backup.png" alt="" /></span>
+  							<h3>Database Prefix, No README, No Online Editing</h3>
+  							<p>Do not use <code>wp_</code> as a prefix. Use a unique prefix. Harder to hack using MySQL injections that way.</p>
+                <p>Remove the README and About files. Not needed and they give away info.</p>
+                <p>Turn of online editing. Slow, sloppy and dangerous: <script src="https://gist.github.com/jasperf/a702f71dc6c3e027fe90.js"></script></p>
+  						</div>
+  						<div class="4u 12u$(medium)">
+  							<span class="image fit"><img src="images/apache-logo.gif" alt="" /></span>
+  							<h3>.htaccess Login and PHP Blocks</h3>
+  							<p>Most sites using WordPress run on Apache. Using an .htaccess in wp-admin, wp-includes and uploads you can prevent brute force attacks and PHP code execution.
+                  <script src="https://gist.github.com/jasperf/59a54c84090a497f352d.js"></script>
+                    To generate the password for user login use:
+                    <script src="https://gist.github.com/jasperf/31b1d37f17a39514d7cd.js"></script>
+                    and to block php execution in a folder use: <script src="https://gist.github.com/jasperf/a785a46de79fc4a16e3e.js"></script>
+                </p>
+  						</div>
+  						<div class="4u$ 12u$(medium)">
+  							<span class="image fit"><img src="images/wordpress-security-keys.png" alt="" /></span>
+  							<h3>Security Keys</h3>
+  							<p>To make you cookie session more secure use WordPress Security Keys. They can be generated <a href="https://api.wordpress.org/secret-key/1.1/salt/">here</a>. Here and example: <script src="https://gist.github.com/jasperf/4a881037ff2236c5923c.js"></script></p>
+  						</div>
+  					</div>
+  				</div>
+  			</section>
+		<!-- Eight -->
+			<section id="eight" class="main style special">
+				<div class="container">
+					<header class="major">
+						<h2>Final Tips, Tools and Question Round</h2>
+					</header>
+          <p>For the love of God do use a decent password, drop using admin as username. <code>jasper!@#</code> won't do!</p>
+          <p>Use great tools like WordFence, WP Scan, BackupBuddy, KeepassX. They are your friends</p>
+					<ul class="actions uniform">
+						<li><a href="https://imagewize.com/contact/" class="button special">Contact Me</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Six -->
+		<!-- <section id="six" class="main style1">
+				<div class="container">
+					<header class="major special">
+						<h2>Elements</h2>
+					</header>
+
+					<section>
+						<h4>Text</h4>
+						<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+						This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+						This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+						<hr />
+						<header>
+							<h4>Heading with a Subtitle</h4>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<header>
+							<h5>Heading with a Subtitle</h5>
+							<p>Lorem ipsum dolor sit amet nullam id egestas urna aliquam</p>
+						</header>
+						<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
+						<hr />
+						<h2>Heading Level 2</h2>
+						<h3>Heading Level 3</h3>
+						<h4>Heading Level 4</h4>
+						<h5>Heading Level 5</h5>
+						<h6>Heading Level 6</h6>
+						<hr />
+						<h5>Blockquote</h5>
+						<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+						<h5>Preformatted</h5>
+						<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+print 'Iteration ' + i;
+deck.shuffle();
+i++;
+}
+
+print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+					</section>
+
+					<section>
+						<h4>Lists</h4>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<h5>Unordered</h5>
+								<ul>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+								<h5>Alternate</h5>
+								<ul class="alt">
+									<li>Dolor pulvinar etiam.</li>
+									<li>Sagittis adipiscing.</li>
+									<li>Felis enim feugiat.</li>
+								</ul>
+							</div>
+							<div class="6u$ 12u$(medium)">
+								<h5>Ordered</h5>
+								<ol>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis viverra.</li>
+									<li>Felis enim feugiat.</li>
+									<li>Dolor pulvinar etiam.</li>
+									<li>Etiam vel felis lorem.</li>
+									<li>Felis enim et feugiat.</li>
+								</ol>
+								<h5>Icons</h5>
+								<ul class="icons">
+									<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+								</ul>
+							</div>
+						</div>
+						<h5>Actions</h5>
+						<div class="row">
+							<div class="6u 12u$(medium)">
+								<ul class="actions">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+								<ul class="actions vertical">
+									<li><a href="#" class="button special">Default</a></li>
+									<li><a href="#" class="button">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small">Small</a></li>
+									<li><a href="#" class="button small">Small</a></li>
+								</ul>
+							</div>
+							<div class="6u 12u$(medium)">
+								<ul class="actions vertical">
+									<li><a href="#" class="button special fit">Default</a></li>
+									<li><a href="#" class="button fit">Default</a></li>
+								</ul>
+								<ul class="actions vertical small">
+									<li><a href="#" class="button special small fit">Small</a></li>
+									<li><a href="#" class="button small fit">Small</a></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<h4>Table</h4>
+						<h5>Default</h5>
+						<div class="table-wrapper">
+							<table>
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+
+						<h5>Alternate</h5>
+						<div class="table-wrapper">
+							<table class="alt">
+								<thead>
+									<tr>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Item One</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Two</td>
+										<td>Vis ac commodo adipiscing arcu aliquet.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Three</td>
+										<td> Morbi faucibus arcu accumsan lorem.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item Four</td>
+										<td>Vitae integer tempus condimentum.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item Five</td>
+										<td>Ante turpis integer aliquet porttitor.</td>
+										<td>29.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="2"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section>
+
+					<section>
+						<h4>Buttons</h4>
+						<ul class="actions">
+							<li><a href="#" class="button special">Special</a></li>
+							<li><a href="#" class="button">Default</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button big">Big</a></li>
+							<li><a href="#" class="button">Default</a></li>
+							<li><a href="#" class="button small">Small</a></li>
+						</ul>
+						<ul class="actions fit">
+							<li><a href="#" class="button fit">Fit</a></li>
+							<li><a href="#" class="button special fit">Fit</a></li>
+							<li><a href="#" class="button fit">Fit</a></li>
+						</ul>
+						<ul class="actions fit small">
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+							<li><a href="#" class="button fit small">Fit + Small</a></li>
+							<li><a href="#" class="button special fit small">Fit + Small</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="#" class="button special icon fa-download">Icon</a></li>
+							<li><a href="#" class="button icon fa-download">Icon</a></li>
+						</ul>
+						<ul class="actions">
+							<li><span class="button special disabled">Disabled</span></li>
+							<li><span class="button disabled">Disabled</span></li>
+						</ul>
+					</section>
+
+					<section>
+						<h4>Form</h4>
+						<form method="post" action="#">
+							<div class="row uniform 50%">
+								<div class="6u 12u$(xsmall)">
+									<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+								</div>
+								<div class="6u$ 12u$(xsmall)">
+									<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+								</div>
+								<div class="12u$">
+									<div class="select-wrapper">
+										<select name="demo-category" id="demo-category">
+											<option value="">- Category -</option>
+											<option value="1">Manufacturing</option>
+											<option value="1">Shipping</option>
+											<option value="1">Administration</option>
+											<option value="1">Human Resources</option>
+										</select>
+									</div>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+									<label for="demo-priority-low">Low</label>
+								</div>
+								<div class="4u 12u$(small)">
+									<input type="radio" id="demo-priority-normal" name="demo-priority">
+									<label for="demo-priority-normal">Normal</label>
+								</div>
+								<div class="4u$ 12u$(small)">
+									<input type="radio" id="demo-priority-high" name="demo-priority">
+									<label for="demo-priority-high">High</label>
+								</div>
+								<div class="6u 12u$(small)">
+									<input type="checkbox" id="demo-copy" name="demo-copy">
+									<label for="demo-copy">Email me a copy</label>
+								</div>
+								<div class="6u$ 12u$(small)">
+									<input type="checkbox" id="demo-human" name="demo-human" checked>
+									<label for="demo-human">Not a robot</label>
+								</div>
+								<div class="12u$">
+									<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<div class="12u$">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="special" /></li>
+										<li><input type="reset" value="Reset" /></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</section>
+
+					<section>
+						<h4>Image</h4>
+						<h5>Fit</h5>
+						<div class="box alt">
+							<div class="row uniform 50%">
+								<div class="12u"><span class="image fit"><img src="images/pic06.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic04.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+								<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+							</div>
+						</div>
+						<h5>Left &amp; Right</h5>
+						<p><span class="image left"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+						<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque praesent.</p>
+					</section>
+
+				</div>
+			</section>
+		-->
+
+		<!-- Footer -->
+			<section id="footer">
+				<ul class="icons">
+					<li><a href="https://twitter.com/jasperfrumau" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/jasperf" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="https://imagewize.com/contact" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Imagewize</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</section>
+    	<script>
+    	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    	  ga('create', 'UA-58732824-1', 'auto');
+    	  ga('send', 'pageview');
+
+    	</script>
+	</body>
+</html>
