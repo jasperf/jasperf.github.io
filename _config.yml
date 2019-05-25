@@ -1,2 +1,3 @@
-gems:
+plugins:
   - jekyll-sitemap
+destination: docs
