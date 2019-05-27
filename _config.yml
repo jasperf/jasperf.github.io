@@ -2,5 +2,5 @@ plugins:
   - jekyll-sitemap
 destination: docs
 theme: jekyll-theme-minimal
-title: [IMWZ Playground]
-description: [IMWZ's Blog on all things Tech]
+title: Jasper's Playground]
+description: [Jasper's Playground and Blog]
